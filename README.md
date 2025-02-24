@@ -897,5 +897,4 @@ end
 
 -- Conecta a função ao evento de clique do botão
 flyButton.MouseButton1Click:Connect(onFlyButtonClick)
-    end
-end)
+end
