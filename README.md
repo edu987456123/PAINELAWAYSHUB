@@ -884,3 +884,5 @@ UserInputService.InputBegan:Connect(function(input, gameProcessed)
         sendRevistarMessage()
     end
 end)
+
+local Section = otoTab:CreateSection("FLY")
