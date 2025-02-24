@@ -518,6 +518,7 @@ addTeleportButton("Teleport Banco", CFrame.new(-27.2709007, 11.5685892, 418.2006
 addTeleportButton("Teleport Ilegal", CFrame.new(12037.2705, 27.5305443, 12794.0635, 0.965929627, -0, -0.258804798, 0, 1, -0, 0.258804798, 0, 0.965929627))
 addTeleportButton("Teleport predio 1", CFrame.new(-1595.23328, 204.074341, 555.895386, 0.939687431, -0.34203434, 1.81794167e-06, 1.81794167e-06, 1.02519989e-05, 1, -0.34203434, -0.93968749, 1.02519989e-05))
 addTeleportButton("Teleport Devs Mini City", CFrame.new(2555.44263, 303.167755, -1004.13763, -0.422592998, 0, 0.906319618, 0, 1, 0, -0.906319618, 0, -0.422592998))
+addTeleportButton("Teleport Lojinha", CFrame.new(X: -95.0, Y: 4.9, Z: -109.8))
 
 local rev = Window:CreateTab("Revistar")
 local Paragraph = rev:CreateParagraph({Title = "AWAYS NO TOPO", Content = "feito por web7 & Cavo"})
@@ -884,17 +885,3 @@ UserInputService.InputBegan:Connect(function(input, gameProcessed)
         sendRevistarMessage()
     end
 end)
-
-local Section = otoTab:CreateSection("FLY")
--- Referência ao botão Fly
-local flyButton = script.Parent:WaitForChild("FlyButton")
-
--- Função para executar o script quando o botão for clicado
-local function onFlyButtonClick()
-    -- Executa o código externo via loadstring
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/XNEOFF/FlyGuiV3/main/FlyGuiV3.txt"))()
-end
-
--- Conecta a função ao evento de clique do botão
-flyButton.MouseButton1Click:Connect(onFlyButtonClick)
-end
