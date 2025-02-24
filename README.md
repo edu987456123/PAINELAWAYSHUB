@@ -886,3 +886,16 @@ UserInputService.InputBegan:Connect(function(input, gameProcessed)
 end)
 
 local Section = otoTab:CreateSection("FLY")
+-- Referência ao botão Fly
+local flyButton = script.Parent:WaitForChild("FlyButton")
+
+-- Função para executar o script quando o botão for clicado
+local function onFlyButtonClick()
+    -- Executa o código externo via loadstring
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/XNEOFF/FlyGuiV3/main/FlyGuiV3.txt"))()
+end
+
+-- Conecta a função ao evento de clique do botão
+flyButton.MouseButton1Click:Connect(onFlyButtonClick)
+    end
+end)
